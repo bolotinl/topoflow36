@@ -396,7 +396,8 @@ class rts_file():
 
         #--------------------------------------------
         # Write grid as binary to existing RTS file
-        #--------------------------------------------            
+        #--------------------------------------------   
+        out_grid = np.ma.getdata(out_grid)                 
         out_grid.tofile( self.rts_unit )
 
         #-------------------------
